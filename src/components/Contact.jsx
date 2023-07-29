@@ -27,16 +27,16 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_r0jcplm",
-        "template_1t76uxq",
+        "service_r0jcplm",// paste your ServiceID here (you'll get one when your service is created).
+        "template_1t76uxq", // paste your TemplateID here (you'll find it under email templates).
         {
           form_name: form.name,
-          to_name: "Liron",
+          to_name: "Gfoura",
           from_email: form.email,
-          to_email: "contact@mail.com",
+          to_email: "eng.ahmedabdelhaleem@gmail.com",
           message: form.message,
         },
-        "Jqq9AvwIuSjoMiA5c"
+        "Jqq9AvwIuSjoMiA5c"//paste your Public Key here. You'll get it in your profile section.
       )
       .then(
         () => {
