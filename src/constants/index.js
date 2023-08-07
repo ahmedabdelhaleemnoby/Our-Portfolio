@@ -1,14 +1,19 @@
 import {
+  ahlashabab,
+  alrefaielawyer,
   backend,
-  carrent,
   creator,
   css,
   docker,
+  eshfaa,
   figma,
+  flymedia,
   git,
+  globeltrendly,
   html,
   javascript,
-  jobit,
+  jj,
+  lajoie,
   laravel,
   meta,
   mobile,
@@ -16,13 +21,17 @@ import {
   php,
   reactjs,
   shopify,
+  skycloud,
+  smartidea,
+  smartsolution,
   sql,
   starbucks,
   tailwind,
   tesla,
-  tripguide,
   typescript,
-  web
+  upvela,
+  web,
+  worldtrendly
 } from "../assets";
 
 export const navLinks = [
@@ -231,13 +240,13 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: alrefaielawyer,
     source_code_link: "https://alrefaielawyer.com/",
   },
   {
-    name: "Job IT",
+    name: "smartsolution",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Web application that enables users to search for marketing agency, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
       {
         name: "react",
@@ -252,13 +261,13 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: smartsolution,
+    source_code_link: "https://smartsolution-ar.com/",
   },
   {
-    name: "Trip Guide",
+    name: "flymedia",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    "Web application that enables users to search for marketing agency, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
       {
         name: "nextjs",
@@ -273,13 +282,13 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: flymedia,
+    source_code_link: "https://www.flymedia-uae.com/",
   },
   {
-    name: "lawyer company",
+    name: "smartidea",
     description:
-      "Web-based platform that allows users to search, book, and manage lawyer company, providing a convenient and efficient solution for transportation needs.",
+    "Web application that enables users to search for marketing agency, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
       {
         name: "react",
@@ -294,13 +303,13 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://alrefaielawyer.com/",
+    image: smartidea,
+    source_code_link: "https://smartidea.tech/",
   },
   {
-    name: "Job IT",
+    name: "ahlashabab",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Web application that enables users to search for charity organization, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
       {
         name: "react",
@@ -315,13 +324,13 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: ahlashabab,
+    source_code_link: "https://charity.ahlashabab.com/",
   },
   {
-    name: "Trip Guide",
+    name: "sky cloud",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    "Web application that enables users to search for marketing agency, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
       {
         name: "nextjs",
@@ -336,13 +345,13 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: skycloud,
+    source_code_link: "https://skycloud-ksa.com/",
   },
   {
-    name: "lawyer company",
+    name: "eshfaa",
     description:
-      "Web-based platform that allows users to search, book, and manage lawyer company, providing a convenient and efficient solution for transportation needs.",
+      "Web-based platform that allows users to search, book, and helth care , providing a convenient and efficient solution for transportation needs.",
     tags: [
       {
         name: "react",
@@ -357,13 +366,13 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://alrefaielawyer.com/",
+    image: eshfaa,
+    source_code_link: "https://eshfaa.com/",
   },
   {
-    name: "Job IT",
+    name: "lajoie",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Web application that enables users to search for Furniture and profile company, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
       {
         name: "react",
@@ -378,11 +387,11 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: lajoie,
+    source_code_link: "https://www.lajoie-eg.com",
   },
   {
-    name: "Trip Guide",
+    name: " world trendly",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
@@ -399,13 +408,13 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: worldtrendly,
+    source_code_link: "https://worldtrendly.com/",
   },
   {
-    name: "lawyer company",
+    name: "globel trendly",
     description:
-      "Web-based platform that allows users to search, book, and manage lawyer company, providing a convenient and efficient solution for transportation needs.",
+      "Web-based platform that allows users to search, book, and manage e commerce websites, providing a convenient and efficient solution for transportation needs.",
     tags: [
       {
         name: "react",
@@ -420,13 +429,13 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://alrefaielawyer.com/",
+    image: globeltrendly,
+    source_code_link: "https://globeltrendly.com/",
   },
   {
-    name: "Job IT",
+    name: "upvela",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Web application that enables users to search for advice crpto, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
       {
         name: "react",
@@ -441,11 +450,11 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: upvela,
+    source_code_link: "https://upvela.com/",
   },
   {
-    name: "Trip Guide",
+    name: "jj",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
@@ -462,8 +471,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: jj,
+    source_code_link: "https://jj.org.sa/",
   },
 ];
 
