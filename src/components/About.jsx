@@ -40,17 +40,14 @@ const About = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>What We Do.</h2>
+        <h2 className={styles.sectionHeadText}>What We Do:</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-4xl leading-[30px]"
       >
-        We are a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks forntend like React, Node.js, and
-        Three.js and backend like php ,Laravel and SQLServer. We are a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        We are skilled software developers with experience in TypeScript and JavaScript, and expertise in frontend frameworks like React, Node.js, and Three.js, as well as backend technologies like PHP, Laravel, and SQL Server. We collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
 
       <div className="mt-20 flex gap-10 flex-wrap lg:flex-nowrap">

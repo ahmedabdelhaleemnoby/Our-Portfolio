@@ -6,12 +6,13 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import axios from "axios";
 
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
-    name: "",
-    email: "",
+    user_name: "",
+    user_email: "",
     message: "",
   });
   const [loading, setLoading] = useState(false);
@@ -21,41 +22,60 @@ const Contact = () => {
     setForm({ ...form, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-
-    emailjs
-      .send(
-        "service_r0jcplm",// paste your ServiceID here (you'll get one when your service is created).
-        "template_1t76uxq", // paste your TemplateID here (you'll find it under email templates).
-        {
-          form_name: form.name,
-          to_name: "Gfoura",
-          from_email: form.email,
-          to_email: "eng.ahmedabdelhaleem@gmail.com",
-          message: form.message,
-        },
-        "Jqq9AvwIuSjoMiA5c"//paste your Public Key here. You'll get it in your profile section.
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
-
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-
-          console.log(error);
-          alert("Something went wrong.");
-        }
+    console.log(form);
+    try {
+      const response = await axios.post(
+        `https://ishop.smartidea.tech/api/contact-us-api`,
+        form
       );
+      console.log(response.data.data);
+      setLoading(false);
+      alert("Thank you. I will get back to you as soon as possible.");
+      setForm({
+        name: "",
+        email: "",
+        message: "",
+      });
+    } catch (error) {
+      setLoading(false);
+      console.log(error);
+      alert("Something went wrong.");
+    }
+    // emailjs
+    //   .send(
+    //     {baseURL:`https://ishop.smartidea.tech/api/contact-us-api`,form}
+    //     // "service_r0jcplm",// paste your ServiceID here (you'll get one when your service is created).
+    //     // "template_1t76uxq", // paste your TemplateID here (you'll find it under email templates).
+    //     // {
+    //     //   form_name: form.name,
+    //     //   to_name: "Gfoura",
+    //     //   from_email: form.email,
+    //     //   to_email: "eng.ahmedabdelhaleem@gmail.com",
+    //     //   message: form.message,
+    //     // },
+    //     // "Jqq9AvwIuSjoMiA5c"//paste your Public Key here. You'll get it in your profile section.
+    //   )
+    //   .then(
+    //     () => {
+    //       setLoading(false);
+    //       alert("Thank you. I will get back to you as soon as possible.");
+
+    //       setForm({
+    //         name: "",
+    //         email: "",
+    //         message: "",
+    //       });
+    //     },
+    //     (error) => {
+    //       setLoading(false);
+
+    //       console.log(error);
+    //       alert("Something went wrong.");
+    //     }
+      // );
   };
 
   return (
@@ -78,8 +98,9 @@ const Contact = () => {
             <span className="text-white font-medium mb-4">Your Name</span>
             <input
               type="text"
-              name="name"
+              name="user_name"
               value={form.name}
+              required
               onChange={handleChange}
               placeholder="What's your name?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
@@ -89,8 +110,9 @@ const Contact = () => {
             <span className="text-white font-medium mb-4">Your email</span>
             <input
               type="email"
-              name="email"
+              name="user_email"
               value={form.email}
+              required
               onChange={handleChange}
               placeholder="What's your email?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
@@ -102,6 +124,7 @@ const Contact = () => {
               rows={7}
               name="message"
               value={form.message}
+              required
               onChange={handleChange}
               placeholder="What do you want to say?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"

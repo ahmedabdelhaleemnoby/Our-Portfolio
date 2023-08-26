@@ -29,10 +29,11 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
-
+import alfn7 from "./alfn7.png";
 import ahlashabab from "./ahlashabab.png";
 import alrefaielawyer from "./alrefaielawyer.png";
 import carrent from "./carrent.png";
+import wordpress from "./company/wordpress.png";
 import eshfaa from "./eshfaa.png";
 import flymedia from "./flymedia.png";
 import globeltrendly from "./globeltrendly.png";
@@ -57,6 +58,7 @@ export {
   docker,
   eshfaa,
   figma,
+  alfn7,
   flymedia,
   git,
   github,
@@ -89,7 +91,6 @@ export {
   typescript,
   upvela,
   web,
-  web2,
-  worldtrendly
+  web2, wordpress, worldtrendly
 };
 
