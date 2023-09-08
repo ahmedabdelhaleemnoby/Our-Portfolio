@@ -1,6 +1,6 @@
-import { r, w } from "maath/dist/misc-7d870b3c.esm";
 import {
   ahlashabab,
+  alfn7,
   alrefaielawyer,
   backend,
   creator,
@@ -16,24 +16,18 @@ import {
   jj,
   lajoie,
   laravel,
-  wordpress,
-  meta,
   mobile,
   nodejs,
   php,
   reactjs,
-  shopify,
-  alfn7,
   skycloud,
   smartidea,
-  smartsolution,
   sql,
-  starbucks,
   tailwind,
-  tesla,
   typescript,
   upvela,
   web,
+  wordpress,
   worldtrendly
 } from "../assets";
 

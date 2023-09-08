@@ -57,6 +57,7 @@ const ProjectCard = ({
 };
 
 const Works = () => {
+  const numServicesToDisplay = window.innerWidth < 1024 ? 4: projects.length;
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -74,7 +75,7 @@ const Works = () => {
       </div>
 
       <div className="mt-20 flex flex-wrap gap-14">
-        {projects.map((project, index) => (
+        {projects.slice(0, numServicesToDisplay).map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>

@@ -30,22 +30,22 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import alfn7 from "./alfn7.png";
-import ahlashabab from "./ahlashabab.png";
-import alrefaielawyer from "./alrefaielawyer.png";
-import carrent from "./carrent.png";
+import ahlashabab from "./ahlashabab.jpg";
+import alrefaielawyer from "./alrefaielawyer.jpg";
+import carrent from "./carrent.jpg";
 import wordpress from "./company/wordpress.png";
-import eshfaa from "./eshfaa.png";
-import flymedia from "./flymedia.png";
-import globeltrendly from "./globeltrendly.png";
-import jj from "./jj.png";
-import jobit from "./jobit.png";
-import lajoie from "./lajoie.png";
-import skycloud from "./skycloud.png";
-import smartidea from "./smartidea.png";
-import smartsolution from "./smartsolution.png";
-import tripguide from "./tripguide.png";
-import upvela from "./upvela.png";
-import worldtrendly from "./worldtrendly.png";
+import eshfaa from "./eshfaa.jpg";
+import flymedia from "./flymedia.jpg";
+import globeltrendly from "./globeltrendly.jpg";
+import jj from "./jj.jpg";
+import jobit from "./jobit.jpg";
+import lajoie from "./lajoie.jpg";
+import skycloud from "./skycloud.jpg";
+import smartidea from "./smartidea.jpg";
+import smartsolution from "./smartsolution.jpg";
+import tripguide from "./tripguide.jpg";
+import upvela from "./upvela.jpg";
+import worldtrendly from "./worldtrendly.jpg";
 
 export {
   ahlashabab,
