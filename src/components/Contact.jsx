@@ -115,6 +115,10 @@ setModalVisible(true);
     });
   }
 };
+const close_msg = () => {
+  window.location.href = "https://gfoura.com";
+  setModalVisible(false);
+}
 const Modal = ({ isVisible, onClose, message }) => {
   if (!isVisible) return null;
 
@@ -202,7 +206,7 @@ const Modal = ({ isVisible, onClose, message }) => {
       </motion.div>
       <Modal 
   isVisible={isModalVisible} 
-  onClose={() => setModalVisible(false)} 
+  onClose={close_msg} 
   message={modalMessage} 
   className="bg-black"
 />

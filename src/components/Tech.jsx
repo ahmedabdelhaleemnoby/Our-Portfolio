@@ -1,12 +1,13 @@
-import { BallCanvas } from "./canvas";
-import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
+import { SectionWrapper } from "../hoc";
+import { BallCanvas } from "./canvas";
 
 const Tech = () => {
+  const numServicesToDisplay = window.innerWidth < 1024 ? 6: technologies.length;
   return (
     <>
       <div className="flex flex-row flex-wrap justify-center gap-10">
-        {technologies.map((technology) => (
+        {technologies.slice(0, numServicesToDisplay).map((technology) => (
           <div className="w-28 h-28" key={technology.name}>
             <BallCanvas icon={technology.icon} />
           </div>
