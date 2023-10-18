@@ -57,7 +57,7 @@ const ProjectCard = ({
 };
 
 const Works = () => {
-  const numServicesToDisplay = window.innerWidth < 1024 ? 4: projects.length;
+  const numServicesToDisplay = window.innerWidth < 920 ? 4: projects.length;
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -83,4 +83,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "work");
